@@ -1,0 +1,34 @@
+    html {
+        font-size: 16px;
+        /* 1rem */
+        font-family: var(--tipografia);
+    }
+    /* Estilos del banner */
+    
+    .sct-banner {
+        width: 100%;
+    }
+    
+    .sct-banner h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .sct-banner p {
+        color: var(--negro-text);
+        font-size: 1rem;
+        margin: 0 auto;
+        text-align: center;
+        width: 75%;
+    }
+    /* Hay que darle el porcentaje al contenedor padre para jugar con el tamaño */
+    
+    .sct-banner .img-container {
+        width: 98%;
+    }
+    
+    .sct-banner .img-container img {
+        width: 100%;
+    }
