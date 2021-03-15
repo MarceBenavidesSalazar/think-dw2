@@ -1,59 +1,101 @@
-    html {
-        font-size: 16px;
-        /* 1rem */
-        font-family: var(--tipografia);
-    }
-    /* Estilos del banner */
-    
-    .sct-banner {
-        width: 100%;
-    }
-    
-    .sct-banner h1 {
-        font-size: 2rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-    
-    .sct-banner p {
-        color: var(--negro-text);
-        font-size: 1rem;
-        margin: 0 auto;
-        text-align: center;
-        width: 75%;
-    }
-    /* Hay que darle el porcentaje al contenedor padre para jugar con el tamaño */
-    
+html {
+    font-size: 16px;
+    /* 1rem */
+    font-family: var(--tipografia);
+}
+
+
+/* Estilos del banner */
+
+.sct-banner {
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+.sct-banner h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sct-banner p {
+    color: var(--negro-text);
+    font-size: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+}
+
+
+/* Hay que darle el porcentaje al contenedor padre para jugar con el tamaño */
+
+.sct-banner .img-container {
+    width: 98%;
+}
+
+.sct-banner .img-container img {
+    width: 100%;
+}
+
+.sct-banner .feature p {
+    text-align: left;
+}
+
+.sct-banner .feature p:nth-child(1) {
+    font-size: 0.75rem;
+    margin-bottom: 20px;
+}
+
+.sct-banner .feature p:nth-child(2) {
+    font-size: 1.5rem;
+}
+
+
+/*     
+    Seccion local picks */
+
+.sct-local {
+    padding: 0 2%;
+}
+
+.sct-local h2 {
+    font-size: 1.5rem;
+}
+
+.sct-local .img-container {
+    width: 100%;
+}
+
+.sct-local .img-container img {
+    width: 100%;
+}
+
+.sct-local span {
+    color: var(--gris-categoria);
+    display: block;
+    font-size: 0.75rem;
+    margin-bottom: 15px;
+}
+
+.sct-local p {
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+}
+
+.sct-local a {
+    color: var(--acento);
+    text-decoration: none;
+}
+
+@media only screen and (min-width:768px) {
     .sct-banner .img-container {
-        width: 98%;
+        float: right;
+        width: 60%;
     }
-    
-    .sct-banner .img-container img {
-        width: 100%;
+    .sct-banner .feature {
+        float: left;
+        padding: 88px 0;
+        width: 40%;
     }
-    
-    .sct-banner .feature p {
-        text-align: left;
-    }
-    
-    .sct-banner .feature p:nth-child(1) {
-        font-size: 0.75rem;
-        margin-bottom: 20px;
-    }
-    
-    .sct-banner .feature p:nth-child(2) {
-        font-size: 1.5rem;
-    }
-    
-    @media only screen and (min-width:768px) {
-        .sct-banner .img-container {
-            float: right;
-            width: 60%;
-        }
-        .sct-banner .feature {
-            float: left;
-            padding: 88px 0;
-            width: 40%;
-        }
-    }
+}
